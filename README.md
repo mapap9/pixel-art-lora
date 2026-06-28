@@ -26,8 +26,8 @@ The low-rank delta updates successfully rewrite how the Latent VAE space transla
 
 ### 🛠️ Key Architectural Inversions:
 1. **Dithering Simulation:** The adapter successfully teaches the model to mimic classic 8-bit/16-bit dithering techniques (alternating pixel clusters) to simulate value transitions across flat surfaces (e.g., sky and water gradients).
-2. **Discrete Edge Clustering:** Soft mathematical transitions are replaced with hard, high-contrast, black-bordered stair-step pixels.
-3. **Catastrophic Forgetting Mitigation:** By locking the base weights completely (`requires_grad_(False)`), the model retains its underlying semantic vocabulary, allowing the new pixelated style to map cleanly to out-of-domain prompts without destroying the network's understanding of complex concepts.
+2. **Edge Clustering:** Soft mathematical transitions are replaced with hard, high-contrast, black-bordered stair-step pixels.
+3. **Locking Base Model Coherence:** By locking the base weights completely (`requires_grad_(False)`), the model retains its underlying semantic vocabulary, allowing the new pixelated style to map cleanly to out-of-domain prompts without destroying the network's understanding of complex concepts.
 
 ---
 
