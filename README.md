@@ -1,5 +1,4 @@
-# Latent Cross-Attention Adaptation Harness (LCAH)
-### *Parameter-Efficient Style Injection via Low-Rank Matrix Decomposition*
+# *Parameter-Efficient Style Injection via Low-Rank Adaptation (LoRA)*
 
 This project is an optimization harness designed to inject discrete structural styles into foundational text-to-image models. By freezing the complete 862-million parameter weight distribution of Stable Diffusion 1.5 and dynamically targeting the cross-attention layers, the network forces smooth, continuous spatial latents to snap into hard, quantized 16-bit pixel art arrangements.
 
